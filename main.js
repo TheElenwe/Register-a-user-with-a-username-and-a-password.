@@ -1,5 +1,5 @@
-let readlineSync = require("readline-sync");
-count = 0;
+const readlineSync = require("readline-sync");
+let count = 0;
 while (true) {
   userName = readlineSync.question("Username \n");
   password = readlineSync.question("Password \n");
@@ -9,7 +9,7 @@ while (true) {
     break;
   }
 
-  count += 1;
+  count+=1
   if (count === 3) {
     console.log("Incorrect");
     break;
