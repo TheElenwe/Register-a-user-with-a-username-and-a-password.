@@ -1,19 +1,14 @@
 let readlineSync = require("readline-sync");
-let count=0;
-
-while(count<3){
-    entry=readlineSync.question("username \n");
-
-    if (entry=="elmo"){
-    
-        console.log("you are in!")
-        break;
-    }
-    if(count<=3){
-        count+=1
-     console.log("incorect")
-     
-    }
-    
-   
+count = 0;
+while (true) {
+  userName = readlineSync.question("username \n");
+  count += 1;
+  if (count === 3) {
+    console.log("incorect");
+    break;
+  } else if (userName == "ilias") {
+    console.log("You are In!");
+    break;
+  }
 }
+
